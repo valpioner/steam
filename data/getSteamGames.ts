@@ -15,7 +15,10 @@ const gameIds: number[] = [
 ];
 
 // Base URL for the Steam Store API
-const baseUrl: string = 'https://store.steampowered.com/api/appdetails';
+const baseUrl = 'https://store.steampowered.com/api/appdetails';
+
+// const packageBasUrl =
+//   'https://store.steampowered.com/api/packagedetails?packageids=218';
 
 // Function to get game details
 const getGameDetails = async (

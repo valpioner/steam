@@ -42,11 +42,13 @@ export default function Home() {
         {games.length === 0 ? (
           <p>Loading...</p>
         ) : (
-          <ul>
-            {games.map((game) => (
-              <li key={game.steam_appid}>{game.name}</li>
-            ))}
-          </ul>
+          <div className="w-[940px] mx-auto py-[50px]">
+            <ul>
+              {games.map((game) => (
+                <li key={game.steam_appid}>{game.name}</li>
+              ))}
+            </ul>
+          </div>
         )}
       </main>
     </div>
