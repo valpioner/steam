@@ -28,36 +28,43 @@ const links = [
     label: 'Support',
     href: '/support',
   },
+  {
+    id: 5,
+    label: 'Test',
+    href: '/test',
+  },
 ];
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className='w-[940px] h-[104px] mx-auto flex flex-row'>
-        <div className='self-center'>
-          <Link href='/'>
+      <div className="w-[940px] h-[104px] mx-auto flex flex-row">
+        <div className="self-center">
+          <Link href="/">
             <Image
-              loader={() => 'https://store.fastly.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016'}
-              src='logo_steam.svg'
+              loader={() =>
+                'https://store.fastly.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016'
+              }
+              src="logo_steam.svg"
               width={176}
               height={44}
-              alt='Link to the Steam Homepage'
+              alt="Link to the Steam Homepage"
               priority={true}
             />
           </Link>
         </div>
-        <nav className='self-center'>
-          <ul className='flex flex-row gap-2'>
+        <nav className="self-center">
+          <ul className="flex flex-row gap-2">
             {links.map((link) => (
               <li key={link.id}>
-                <Link href={link.href} className='uppercase'>
+                <Link href={link.href} className="uppercase">
                   {link.label}
                 </Link>
               </li>
             ))}
           </ul>
         </nav>
-        <div className='ml-auto'>Right menu</div>
+        <div className="ml-auto">Right menu</div>
       </div>
     </header>
   );
