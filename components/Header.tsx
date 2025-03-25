@@ -33,6 +33,11 @@ const links = [
     label: 'Test',
     href: '/test',
   },
+  {
+    id: 7,
+    label: 'Lazy',
+    href: '/lazy',
+  },
 ];
 
 const Header = () => {
